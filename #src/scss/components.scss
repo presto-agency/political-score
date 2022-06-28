@@ -1,0 +1,63 @@
+.logo{
+  width: 209px;
+  height: 42px;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+}
+.button{
+  display: block;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  height: 46px;
+  line-height: 30px;
+  padding: 8px 26px;
+  border-radius: 4px;
+  color: $white;
+  transition: 300ms;
+  & + .button{
+    margin: 0 0 0 16px;
+  }
+  &.blue{
+    background: $blue;
+  }
+  &.red{
+    background: $red;
+  }
+  &.drop-down{
+    position: relative;
+    &:hover{
+      opacity: 1;
+      background: rgba($red, 0.7);
+    }
+    ul{
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: $white;
+      min-width: 100%;
+      box-shadow: 7px 5px 10px rgb(228 231 255 / 65%);
+    li{
+        padding: 5px 16px;
+        font-size: 16px;
+        line-height: 30px;
+        white-space: nowrap;
+        a{
+          color: $blue;
+        }
+      }
+    }
+    &:hover{
+      ul{
+        display: block;
+      }
+    }
+  }
+  &:hover{
+    opacity: 0.7;
+  }
+}
