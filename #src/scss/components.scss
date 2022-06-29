@@ -6,9 +6,13 @@
       height: 100%;
       object-fit: contain;
     }
+    a{
+      display: block;
+    }
 }
+
 .button{
-  display: block;
+  display: inline-block;
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
@@ -26,6 +30,12 @@
   }
   &.red{
     background: $red;
+  }
+  &.large{
+    height: 52px;
+    font-size: 18px;
+    line-height: 34px;
+    padding: 9px 46px;
   }
   &.drop-down{
     position: relative;
